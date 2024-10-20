@@ -27,3 +27,5 @@ Thumbs.db
 
 # Package lock files (if using npm)
 package-lock.json
+
+@mf-types

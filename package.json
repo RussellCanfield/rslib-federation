@@ -1,0 +1,11 @@
+{
+	"name": "rslib",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "pnpm -filter \"rslib-*\" dev"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}

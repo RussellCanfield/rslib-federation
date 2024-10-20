@@ -1,0 +1,32 @@
+{
+	"name": "rslib-lib",
+	"version": "1.0.0",
+	"main": "index.js",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/esm/index.d.ts",
+				"default": "./dist/esm/index.mjs"
+			},
+			"require": {
+				"types": "./dist/cjs/index.d.ts",
+				"default": "./dist/cjs/index.js"
+			}
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rslib build",
+		"dev": "pnpm build && http-server -p 3001 ./dist/ --cors"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@rslib/core": "0.0.13",
+		"@module-federation/rsbuild-plugin": "0.0.2",
+		"http-server": "14.1.1"
+	}
+}
